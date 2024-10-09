@@ -1,4 +1,4 @@
-import 'package:chatapp/features/splash_screen/splash_screen.dart';
+import 'package:chatapp/features/splash_screen/persentation/views/splash_view.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
