@@ -7,15 +7,20 @@ abstract class Styles {
     fontWeight: FontWeight.w600,
   );
 
+  static const TextStyle textStyle28 = TextStyle(
+    color: Colors.black,
+    fontSize: 28,
+    fontWeight: FontWeight.w700,
+  );
+
   static const TextStyle textStyle15 = TextStyle(
     color: Colors.black,
     fontSize: 15,
     fontWeight: FontWeight.w500,
   );
-
-  static const TextStyle textStyle28 = TextStyle(
+  static const TextStyle textStyle22 = TextStyle(
     color: Colors.black,
-    fontSize: 28,
-    fontWeight: FontWeight.w700,
+    fontSize: 22,
+    fontWeight: FontWeight.bold,
   );
 }

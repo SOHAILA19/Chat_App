@@ -1,4 +1,4 @@
-import 'package:chatapp/features/splash_screen/persentation/views/splash_view.dart';
+import 'package:chatapp/features/home/persentation/views/widgets/navigation_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
         textTheme: GoogleFonts.interTextTheme(),
         useMaterial3: true,
       ),
-      home: const SplashScreen(),
+      home: const NavigationnBar(),
     );
   }
 }
