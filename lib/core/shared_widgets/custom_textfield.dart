@@ -17,7 +17,7 @@ class CustomTextField extends StatelessWidget {
   final bool? enable;
 
   const CustomTextField({
-    Key? key,
+    super.key,
     this.controller,
     required this.type,
     this.onChange,
@@ -31,7 +31,7 @@ class CustomTextField extends StatelessWidget {
     this.tap,
     this.enable = true,
     this.errorText,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

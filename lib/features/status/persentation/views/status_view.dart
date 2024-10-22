@@ -17,13 +17,19 @@ class StatusView extends StatelessWidget {
           OptionIcon(),
         ],
       ),
-      body:const Column(
-        children: [
-          Divider(
-            color: Colors.grey,
-            height: 1,
-          ),
-        StatusBody(),],),
+      body: Padding(
+        padding: const EdgeInsets.all(15.0),
+        child: const Column(
+          children: [
+            Divider(
+              color: Colors.grey,
+              height: 1,
+            ),
+            SizedBox(height: 15),
+            StatusBody(),
+          ],
+        ),
+      ),
     );
   }
 }

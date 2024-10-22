@@ -32,4 +32,9 @@ abstract class AssetIcons {
     size: 40,
     color: Colors.green,
   );
+  static const add = Icon(
+    Icons.add,
+    size: 16,
+    color: Colors.green,
+  );
 }
