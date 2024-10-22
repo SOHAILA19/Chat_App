@@ -11,14 +11,21 @@ class CallView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        elevation: 1,
         title: const WhatsUpText(),
         actions: const [
           SearchIcon(),
           OptionIcon(),
         ],
       ),
-      body: const CallBody(),
+      body: const Column(
+        children: [
+          Divider(
+            color: Colors.grey, // Color of the line
+            height: 1, // Thickness of the line
+          ),
+          CallBody(),
+        ],
+      ),
     );
   }
 }

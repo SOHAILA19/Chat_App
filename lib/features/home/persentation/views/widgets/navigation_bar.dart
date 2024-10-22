@@ -12,7 +12,7 @@ class NavigationnBar extends StatefulWidget {
 }
 
 class _NavigationnBarState extends State<NavigationnBar> {
-  int _selectedIndex = 1;
+  int _selectedIndex = 0;
 
   final List<Widget> _pages = [
     const HomeView(),

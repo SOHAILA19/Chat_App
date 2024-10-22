@@ -12,7 +12,6 @@ class StatusBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Expanded(
-      // or Flexible
       child: CustomScrollView(
         slivers: [
           SliverToBoxAdapter(child: const MyStatus()),

@@ -18,7 +18,7 @@ class StatusView extends StatelessWidget {
         ],
       ),
       body: Padding(
-        padding: const EdgeInsets.all(15.0),
+        padding: const EdgeInsets.only(left: 15.0),
         child: const Column(
           children: [
             Divider(
