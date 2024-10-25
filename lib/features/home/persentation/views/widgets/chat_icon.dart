@@ -1,3 +1,4 @@
+import 'package:chatapp/core/themes/colors.dart';
 import 'package:flutter/material.dart';
 
 class ChatIcon extends StatelessWidget {
@@ -9,7 +10,7 @@ class ChatIcon extends StatelessWidget {
   Widget build(BuildContext context) {
     return FloatingActionButton(
       onPressed: () {},
-      backgroundColor: Colors.green,
+      backgroundColor: ColorsApp.primaryColor,
       child: const Icon(
         Icons.chat,
         color: Colors.white,

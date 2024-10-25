@@ -6,8 +6,8 @@ class LoginButton extends StatefulWidget {
   final TextEditingController emailController;
   final TextEditingController passwordController;
   final VoidCallback onSuccess;
-  final Function(String?) onEmailError; // Function to handle email error
-  final Function(String?) onPasswordError; // Function to handle password error
+  final Function(String?) onEmailError;
+  final Function(String?) onPasswordError;
 
   const LoginButton({
     super.key,
@@ -24,7 +24,6 @@ class LoginButton extends StatefulWidget {
 
 class _LoginButtonState extends State<LoginButton> {
   void _validateFields() {
-    // Reset errors to null
     widget.onEmailError(null);
     widget.onPasswordError(null);
 
@@ -45,7 +44,6 @@ class _LoginButtonState extends State<LoginButton> {
       );
     }
 
-    // Call the success function if all validations pass
     if (widget.emailController.text.isNotEmpty &&
         widget.passwordController.text.isNotEmpty &&
         widget.passwordController.text.length >= 8 &&

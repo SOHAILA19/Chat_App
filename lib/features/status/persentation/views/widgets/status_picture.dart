@@ -1,4 +1,5 @@
 import 'package:chatapp/core/constants/asset_icons.dart';
+import 'package:chatapp/core/themes/colors.dart';
 import 'package:flutter/material.dart';
 
 class StatusPicture extends StatelessWidget {
@@ -18,7 +19,7 @@ class StatusPicture extends StatelessWidget {
           child: Container(
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
-                border: Border.all(color: Colors.green, width: 2),
+                border: Border.all(color: ColorsApp.primaryColor, width: 2),
               ),
               child: AssetIcons.add),
         ),

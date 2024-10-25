@@ -1,3 +1,4 @@
+import 'package:chatapp/core/themes/colors.dart';
 import 'package:flutter/material.dart';
 
 class RecentPicture extends StatelessWidget {
@@ -12,7 +13,7 @@ class RecentPicture extends StatelessWidget {
       child: Container(
         decoration: BoxDecoration(
           shape: BoxShape.circle,
-          border: Border.all(color: Colors.green, width: 2),
+          border: Border.all(color: ColorsApp.primaryColor, width: 2),
         ),
       ),
     );

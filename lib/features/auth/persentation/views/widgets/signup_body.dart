@@ -6,7 +6,7 @@ import 'package:chatapp/features/auth/persentation/views/widgets/password_textfi
 import 'package:chatapp/features/auth/persentation/views/widgets/signup_button.dart';
 import 'package:chatapp/features/auth/persentation/views/widgets/signup_row.dart';
 import 'package:chatapp/features/auth/persentation/views/widgets/signup_title.dart';
-import 'package:chatapp/features/home/persentation/views/home_view.dart';
+import 'package:chatapp/features/home/persentation/views/widgets/navigation_bar.dart';
 import 'package:flutter/material.dart';
 
 class SignupBody extends StatefulWidget {
@@ -75,7 +75,7 @@ class _SignupBodyState extends State<SignupBody> {
                   Navigator.pushReplacement(
                       context,
                       MaterialPageRoute(
-                          builder: (context) => const HomeView()));
+                          builder: (context) => const NavigationnBar()));
                 },
                 onEmailError: (error) {
                   setState(() {

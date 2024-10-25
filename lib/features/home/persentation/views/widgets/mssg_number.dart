@@ -1,3 +1,4 @@
+import 'package:chatapp/core/themes/colors.dart';
 import 'package:flutter/material.dart';
 
 class MssgNumber extends StatelessWidget {
@@ -7,7 +8,7 @@ class MssgNumber extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CircleAvatar(
-      backgroundColor: Colors.green,
+      backgroundColor: ColorsApp.primaryColor,
       radius: 12,
       child: Text(
         messages.toString(),

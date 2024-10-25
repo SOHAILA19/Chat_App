@@ -1,4 +1,5 @@
-import 'package:chatapp/features/home/persentation/views/widgets/navigation_bar.dart';
+import 'package:chatapp/core/themes/colors.dart';
+import 'package:chatapp/features/splash_screen/persentation/views/splash_view.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -14,11 +15,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.green),
+        colorScheme: ColorScheme.fromSeed(seedColor: ColorsApp.primaryColor),
         textTheme: GoogleFonts.interTextTheme(),
         useMaterial3: true,
       ),
-      home: const NavigationnBar(),
+      home: const SplashView(),
     );
   }
 }

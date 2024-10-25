@@ -4,7 +4,7 @@ import 'package:chatapp/features/auth/persentation/views/widgets/login_button.da
 import 'package:chatapp/features/auth/persentation/views/widgets/login_row.dart';
 import 'package:chatapp/features/auth/persentation/views/widgets/login_title.dart';
 import 'package:chatapp/features/auth/persentation/views/widgets/password_textfield.dart';
-import 'package:chatapp/features/home/persentation/views/home_view.dart';
+import 'package:chatapp/features/home/persentation/views/widgets/navigation_bar.dart';
 import 'package:flutter/material.dart';
 
 class LoginBody extends StatefulWidget {
@@ -57,7 +57,7 @@ class _LoginBodyState extends State<LoginBody> {
                   Navigator.pushReplacement(
                       context,
                       MaterialPageRoute(
-                          builder: (context) => const HomeView()));
+                          builder: (context) => const NavigationnBar()));
                 },
                 onEmailError: (error) {
                   setState(() {

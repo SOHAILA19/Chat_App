@@ -1,4 +1,4 @@
-import 'package:chatapp/core/constants/asset_icons.dart';
+import 'package:chatapp/features/profile/persentation/views/profile_view.dart';
 import 'package:flutter/material.dart';
 
 class OptionIcon extends StatelessWidget {
@@ -9,8 +9,35 @@ class OptionIcon extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return IconButton(
-      icon: AssetIcons.options,
-      onPressed: () {},
+      icon: Icon(Icons.more_vert),
+      onPressed: () {
+        showMenu(
+          context: context,
+          position: RelativeRect.fromLTRB(100, 50, 0, 0),
+          items: [
+            PopupMenuItem<String>(
+              value: 'New Group',
+              child: Text('New Group'),
+            ),
+            PopupMenuItem<String>(
+              value: 'Profile',
+              child: Text('Profile'),
+            ),
+            PopupMenuItem<String>(
+              value: 'Logout',
+              child: Text('Logout'),
+            ),
+          ],
+        ).then((value) {
+          if (value == 'New Group') {
+          } else if (value == 'Profile') {
+            Navigator.push(
+                // ignore: use_build_context_synchronously
+                context,
+                MaterialPageRoute(builder: (context) => ProfileView()));
+          } else if (value == 'Logout') {}
+        });
+      },
     );
   }
 }
